@@ -7,8 +7,8 @@ Created on Wed Sep 11 16:36:03 2013
 
 import pygame
 
-SCREEN_WIDTH = 480
-SCREEN_HEIGHT = 800
+SCREEN_WIDTH = 600
+SCREEN_HEIGHT = 1200
 
 TYPE_SMALL = 1
 TYPE_MIDDLE = 2
@@ -21,7 +21,8 @@ class Bullet(pygame.sprite.Sprite):
         self.image = bullet_img
         self.rect = self.image.get_rect()
         self.rect.midbottom = init_pos
-        self.speed = 10
+        self.speed = 20
+        
 
     def move(self):
         self.rect.top -= self.speed
